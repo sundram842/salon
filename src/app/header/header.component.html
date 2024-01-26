@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <div class="logo menu-span">
+    <img
+      src="../../assets/sunSpa.jpg"
+      alt="Company Logo"
+      loading="lazy"
+    />
+  </div>
+  <span class="menu-span">Home</span>
+  <span class="menu-span">About</span>
+  <span class="menu-span" (mouseenter)="onHover()" (mouseleave)="onLeave()">Service</span>
+  <span class="menu-span">Contact</span>
+  <span class="example-spacer"></span>
+   <mat-icon (click)="openSearch('100ms', '100ms')">search</mat-icon>
+  <button class="mat-button email" type="mail" (click)="openEmailClient()" >
+   Book For Appointment
+  </button>
+ 
+ 
+</mat-toolbar>
+<div>
+<app-service *ngIf="isService" (messageEvent)="receiveMessage($event)"></app-service>
+</div>
+<app-home-page></app-home-page>
+

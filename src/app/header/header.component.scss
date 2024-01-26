@@ -1,0 +1,35 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.menu-span {
+  margin-top: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  /* Adjust the value to your preferred spacing */
+  color: black;
+}
+.logo {
+  :hover {
+    background-color: var(--color15);
+    cursor: pointer;
+  }
+
+  img {
+    max-width: 244px;
+    max-height: 64px;
+    margin-top: 10px;
+  }
+}
+
+.mat-toolbar {
+  background: #190305; /* Fallback color */
+  background: linear-gradient(to right, #d7e8c9,#fbd8dc);
+}
+.email {
+  margin: 10px;
+  background: black;
+  // background: linear-gradient(to right, #7648ce, #f64f58);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}

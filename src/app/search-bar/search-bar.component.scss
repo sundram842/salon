@@ -1,0 +1,20 @@
+.center-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 153px;
+}
+ .custom-width-input {
+    width: 3000px; /* Set your desired width here */
+  }
+  .mat-mdc-form-field{
+width: 300px;
+  }
+/* Border */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white;
+}
+/* Font color */
+input.mat-input-element {
+  color: white;
+}
