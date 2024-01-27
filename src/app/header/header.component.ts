@@ -7,13 +7,15 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { HomePageComponent } from "../home-page/home-page.component";
 import { ServiceComponent } from "../service/service.component";
-
+import { LogoComponentComponent } from "../logo-component/logo-component.component";
+import { AboutMeComponent} from "../about-me/about-me.component";
 @Component({
     selector: 'app-header',
     standalone: true,
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    imports: [CommonModule, MatToolbarModule, MatIconModule, MatButtonModule, MatDialogModule, HomePageComponent, ServiceComponent]
+    imports: [CommonModule, MatToolbarModule, MatIconModule, MatButtonModule, MatDialogModule, HomePageComponent, ServiceComponent,LogoComponentComponent,AboutMeComponent],
+  
 })
 export class HeaderComponent {
   public isService:boolean = false;

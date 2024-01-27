@@ -1,0 +1,17 @@
+
+.vs-carousel {
+    display: flex;
+    justify-content: center; /* Center the content along the horizontal axis */
+    overflow-x: auto;
+    padding: 10px; /* Add padding as needed */
+    background-color: lightcoral; /* Light red background color */
+}
+
+.brand-item {
+    margin-right:75px; /* Adjust the margin to create a 5px gap between images */
+}
+
+.vs-carousel img {
+    max-width: 100%;
+    height: auto;
+}
