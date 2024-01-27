@@ -6,10 +6,12 @@
       loading="lazy"
     />
   </div>
+  <ng-container>
   <span class="menu-span">Home</span>
-  <span class="menu-span">About</span>
-  <span class="menu-span" (mouseenter)="onHover()" (mouseleave)="onLeave()">Service</span>
-  <span class="menu-span">Contact</span>
+  <span class="menu-span" (mouseenter)="onHoverAbout()">About</span>
+  </ng-container>
+  <span class="menu-span" (mouseenter)="onHover()">Service</span>
+  <span class="menu-span" (mouseenter)="onHoverContact()" >Contact</span>
   <span class="example-spacer"></span>
    <mat-icon (click)="openSearch('100ms', '100ms')">search</mat-icon>
   <button class="mat-button email" type="mail" (click)="openEmailClient()" >

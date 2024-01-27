@@ -48,4 +48,11 @@ export class HeaderComponent {
   public receiveMessage(message: boolean) {
     this.isService = message;
   }
+
+  public onHoverAbout(){
+    this.isService = false;
+  }
+  public onHoverContact(){
+    this.isService = false;
+  }
 }
