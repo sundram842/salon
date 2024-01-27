@@ -17,12 +17,13 @@
   <button class="mat-button email" type="mail" (click)="openEmailClient()" >
    Book For Appointment
   </button>
- 
- 
 </mat-toolbar>
 <div>
 <app-service *ngIf="isService" (messageEvent)="receiveMessage($event)"></app-service>
 </div>
-<!-- <app-home-page></app-home-page> -->
-<!-- <app-logo-component></app-logo-component> -->
-<app-about-me></app-about-me>
+<div class="home-logo">
+  <app-home-page></app-home-page>
+<app-logo-component></app-logo-component>
+</div>
+
+<!-- <app-about-me></app-about-me> -->
